@@ -5,7 +5,7 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <title></title>
+  <title>Command Page</title>
   
   
   
@@ -27,18 +27,31 @@
 <!-- Home -->
 <div data-role="page" id="page1">
     <div data-role="content">
-        <div data-role="fieldcontain">
-            <textarea name="txtToSend" id="txtToSendId" placeholder=""></textarea>
-        </div>
-        <a data-role="button" href="#page1" data-icon="arrow-r" data-iconpos="right" id="btnSendId">
-            Send
+    	<div data-role="header" id="header">
+    		Command Page
+    	</div>
+
+        <a data-role="button" href="#page1" data-icon="arrow-u" data-iconpos="top" id="btnUp">
         </a>
+        
+        <div class="ui-grid-a">
+	      <div class="ui-block-a">
+	       <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="top" id="btnLeft"></a>
+	      </div>
+	
+	      <div class="ui-block-b">
+	        <a data-role="button" href="#page1" data-icon="arrow-r" data-iconpos="top" id="btnRight"></a>
+	      </div>
+    </div>
+         <a data-role="button" href="#page1" data-icon="arrow-d" data-iconpos="top" id="btnDown"></a>
+        
+        
         <div data-role="fieldcontain">
             <textarea name="txtReceived" id="txtReceivedId" placeholder=""></textarea>
         </div>
         <div class="ui-grid-a">
             <div class="ui-block-a">
-                <a data-role="button" href="#page1">
+                <a data-role="button" href="#page1" id="btnRst">
                     Reset
                 </a>
             </div>
